@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Profit Pack Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="calculator">
+    
+    <div class="title">Profit Pack Calculator</div>
+
+
+    <div class="line">
+      <div class="label-text">1. If base price is:</div>
+      <input type="number" id="basePrice" step="0.01" placeholder="0.00" />
+      <div class="label-text">Then taxed price is:</div>
+      <input type="text" id="taxedPrice" readonly placeholder="-" />
+    </div>
+
+    <div class="line">
+      <div class="label-text">2. If quantity is:</div>
+      <input type="number" id="quantity" placeholder="0" />
+      <div class="label-text">Then cost per item is:</div>
+      <input type="text" id="costPerItem" readonly placeholder="-" />
+    </div>
+    
+    <div class="line">
+      <div class="label-text">3. If base price and quantity are given:</div>
+      <div class="label-text">Then retail price per item is:</div>
+      <input type="text" id="retailPrice" readonly placeholder="-" />
+    </div>
+
+    <div class="line">
+      <div class="label-text">4. If selling price is:</div>
+      <input type="number" id="sellingPrice" step="0.01" placeholder="0.00" />
+      <div class="label-text">Then RM8 can fit pieces of:</div>
+      <input type="text" id="itemsPer8" readonly placeholder="-" />
+    </div>
+
+    <div class="line">
+      <div class="label-text">5. If you have <span id="qtyText">-</span> items:</div>
+      <div class="label-text">Then RM8 pack(s) you can make:</div>
+      <input type="text" id="rm8Packs" readonly placeholder="-" />
+    </div>
+
+    <div class="line">
+      <div class="label-text">6. If you sell <span id="packText">-</span> pack(s) at RM8:</div>
+      <div class="label-text">Then total revenue is:</div>
+      <input type="text" id="totalRevenue" readonly placeholder="-" />
+    </div>
+
+    <div class="line">
+      <div class="label-text">7. If base price is given:</div>
+      <div class="label-text">Then profit is:</div>
+      <input type="text" id="profit" readonly placeholder="-" />
+    </div>
+
+
+    <div class="line">
+  <button id="clearButton">Clear All</button>
+</div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
